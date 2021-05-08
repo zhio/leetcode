@@ -17,7 +17,7 @@ from typing import List
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if not root : return []
-        stack,res = [root ],[]
+        stack,res = [root],[]
         while stack:
             node = stack.pop()
             if node:
@@ -27,6 +27,7 @@ class Solution:
                 if node.left:
                     stack.append(node.left)
         return res
+        
     def preorderTraversal2(self,root: TreeNode) -> List[int]:
         if not root: return []
         cur,res,stack = root,[],[]

@@ -6,7 +6,7 @@
 
 // @lc code=start
 func firstMissingPositive(nums []int) int {
-	numMap := make(map[int][int],len(nums))
+	numMap := make(map[int]int,len(nums))
 	for _,v := range nums{
 		numMap[v] = v
 	}
